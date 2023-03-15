@@ -1,0 +1,16 @@
+import cv2
+
+img=cv2.imread('solar-system.jpg')
+cv2.putText(img,"SUN",(100,50),cv2.FONT_HERSHEY_COMPLEX_SMALL,3,(255,255,255))
+cv2.putText(img,"MERCURY",(120,180),cv2.FONT_HERSHEY_COMPLEX_SMALL,0.5,(255,255,255))
+cv2.putText(img,"VENUS",(200,270),cv2.FONT_HERSHEY_COMPLEX_SMALL,0.5,(255,255,255))
+cv2.putText(img,"EARTH",(300,270),cv2.FONT_HERSHEY_COMPLEX_SMALL,0.5,(255,255,255))
+cv2.putText(img,"MOON",(290,170),cv2.FONT_HERSHEY_COMPLEX_SMALL,0.5,(255,255,255))
+cv2.putText(img,"MARS",(400,270),cv2.FONT_HERSHEY_COMPLEX_SMALL,0.5,(255,255,255))
+cv2.putText(img,"JUPITER",(500,70),cv2.FONT_HERSHEY_COMPLEX_SMALL,0.5,(255,255,255))
+cv2.putText(img,"SATURN",(750,90),cv2.FONT_HERSHEY_COMPLEX_SMALL,0.5,(255,255,255))
+cv2.putText(img,"URANUS",(950,90),cv2.FONT_HERSHEY_COMPLEX_SMALL,0.5,(255,255,255))
+cv2.putText(img,"NEPTUNE",(1111,90),cv2.FONT_HERSHEY_COMPLEX_SMALL,0.5,(255,255,255))
+cv2.imwrite("Solar_systemwithname.jpg",img)
+cv2.imshow("output",img)
+cv2.waitKey(0)
